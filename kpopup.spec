@@ -53,10 +53,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 echo
-echo Locate the [global] section of your Samba configuration file \(smb.conf\)
-echo and add the following line:
+echo "Locate the [global] section of your Samba configuration file \(smb.conf\)"
+echo "and add the following line:"
 echo
-echo message command = sh -c \'/usr/bin/receivepopup.sh \"%s\" \"%f\"\' &
+echo "message command = sh -c \'/usr/bin/receivepopup.sh \"%s\" \"%f\"\' \&"
 echo
 
 %files -f kpopup.lang
@@ -66,4 +66,4 @@ echo
 %attr(755,root,root) %{_bindir}/receivepopup.sh
 %{_desktopdir}/kde/kpopup.desktop
 %{_iconsdir}/hicolor/*/*/kpopup.png
-%dir %attr(1777,root,root) /var/lib/kpopup
+%dir %attr(777,root,root) /var/lib/kpopup
