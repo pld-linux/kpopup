@@ -1,0 +1,8 @@
+--- kpopup-0.9.7/misc/kpopup.desktop.orig	2004-04-13 22:45:40.000000000 +0200
++++ kpopup-0.9.7/misc/kpopup.desktop	2004-07-05 03:35:06.154638512 +0200
+@@ -9,4 +9,4 @@
+ Icon=kpopup.png
+ DocPath=kpopup/index.html
+ Terminal=0
+-Categories=Qt;KDE;Utility
++Categories=Qt;KDE;Network;InstantMessaging;
