@@ -32,7 +32,7 @@ cp -f /usr/share/automake/config.sub admin
 export UNSERMAKE=/usr/share/unsermake/unsermake
 
 %configure \
-    --with-qt-libraries=%{_libdir}
+	--with-qt-libraries=%{_libdir}
 
 %{__make}
 
@@ -42,9 +42,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/var/lib/kpopup
 
 %{__make} install \
-    DESTDIR=$RPM_BUILD_ROOT \
-    kde_htmldir=%{_kdedocdir} \
-    kde_libs_htmldir=%{_kdedocdir}
+	DESTDIR=$RPM_BUILD_ROOT \
+	kde_htmldir=%{_kdedocdir} \
+	kde_libs_htmldir=%{_kdedocdir}
 
 %find_lang %{name} --with-kde
 
