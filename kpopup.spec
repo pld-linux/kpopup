@@ -56,7 +56,7 @@ echo
 echo Locate the [global] section of your Samba configuration file \(smb.conf\)
 echo and add the following line:
 echo
-echo message command = sh -c \'/usr/bin/receivepopup.sh \"%s\" \"%f\"\'
+echo message command = sh -c \'/usr/bin/receivepopup.sh \"%s\" \"%f\"\' &
 echo
 
 %files -f kpopup.lang
