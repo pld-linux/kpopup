@@ -3,8 +3,8 @@ Summary(pl):	KPopup - program do wysy³ania i odbierania wiadomo¶ci WinPopup
 Name:		kpopup
 Version:	0.9.7
 Release:	0.1
-License:	GPL
-Group:		X11/Applications
+License:	GPL v2
+Group:		X11/Applications/Networking
 Source0:	http://www.henschelsoft.de/kpopup/%{name}-%{version}.tar.gz
 # Source0-md5:	ea975a599118fd62d3e6ba7d59126514
 Patch0:		%{name}-desktop.patch
