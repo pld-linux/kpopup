@@ -12,6 +12,7 @@ URL:		http://www.henschelsoft.de/kpopup_en.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
+BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	unsermake >= 040511
 Requires:	samba-client
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
