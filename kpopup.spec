@@ -1,12 +1,12 @@
 Summary:	KPopup - a program for sending and receiving Microsoft(tm) WinPopup messages
 Summary(pl):	KPopup - program do wysy³ania i odbierania wiadomo¶ci WinPopup
 Name:		kpopup
-Version:	0.9.7
+Version:	0.9.8
 Release:	0.1
 License:	GPL v2
 Group:		X11/Applications/Networking
 Source0:	http://www.henschelsoft.de/kpopup/%{name}-%{version}.tar.gz
-# Source0-md5:	ea975a599118fd62d3e6ba7d59126514
+# Source0-md5:	7cae7f1b1257aa703c10cdb2ef86a28f
 Patch0:		%{name}-desktop.patch
 URL:		http://www.henschelsoft.de/kpopup_en.html
 BuildRequires:	autoconf
