@@ -1,8 +1,20 @@
 --- kpopup-0.9.7/misc/kpopup.desktop.orig	2004-04-13 22:45:40.000000000 +0200
 +++ kpopup-0.9.7/misc/kpopup.desktop	2004-07-05 03:35:06.154638512 +0200
-@@ -9,4 +9,4 @@
+@@ -1,12 +1,13 @@
+ [Desktop Entry]
+ Encoding=UTF-8
+ GenericName=SMB Popup Sending Tool
+-GenericName[de]=SMB Popup Sending Tool
++GenericName[pl]=Narzędzie do wysyłania przez SMB wyskakujących kominikatów
++Comment=SMB Popup Sending Tool
++Comment[pl]=Narzędzie do wysyłania przez SMB wyskakujących kominikatów
+ Name=KPopup
+-Name[de]=KPopup
+ Exec=kpopup -caption "%c" %i %m
+ Type=Application
  Icon=kpopup.png
  DocPath=kpopup/index.html
- Terminal=0
+-Terminal=0
 -Categories=Qt;KDE;Utility
++Terminal=false
 +Categories=Qt;KDE;Network;InstantMessaging;
