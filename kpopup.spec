@@ -2,7 +2,7 @@ Summary:	KPopup - a program for sending and receiving Microsoft(tm) WinPopup mes
 Summary(pl):	KPopup - program do wysy³ania i odbierania wiadomo¶ci WinPopup
 Name:		kpopup
 Version:	0.9.8.2
-Release:	2
+Release:	3
 License:	GPL v2
 Group:		X11/Applications/Networking
 Source0:	http://www.henschelsoft.de/kpopup/%{name}-%{version}.tar.gz
@@ -12,7 +12,7 @@ URL:		http://www.henschelsoft.de/kpopup_en.html
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	kdelibs-devel >= 9:3.2.0
-BuildRequires:	rpmbuild(macros) >= 1.129
+BuildRequires:	rpmbuild(macros) >= 1.194
 BuildRequires:	unsermake >= 040511
 Requires:	samba-client
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -53,12 +53,15 @@ install -d $RPM_BUILD_ROOT/var/lib/kpopup
 rm -rf $RPM_BUILD_ROOT
 
 %post
-echo
-echo "Locate the [global] section of your Samba configuration file \(smb.conf\)"
-echo "and add the following line:"
-echo
-echo "message command = sh -c \'/usr/bin/receivepopup.sh \"%s\" \"%f\"\' \&"
-echo
+if [ "$1" = 1 ]; then
+%banner -e %{name} <<'EOF'
+Locate the [global] section of your Samba configuration file (smb.conf)
+and add the following line:
+
+message command = sh -c '/usr/bin/receivepopup.sh "%s" "%f"' &
+EOF
+# 'vim
+fi
 
 %files -f kpopup.lang
 %defattr(644,root,root,755)
