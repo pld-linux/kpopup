@@ -1,5 +1,5 @@
 Summary:	KPopup - a program for sending and receiving Microsoft(tm) WinPopup messages
-Summary(pl.UTF-8):   KPopup - program do wysyłania i odbierania wiadomości WinPopup
+Summary(pl.UTF-8):	KPopup - program do wysyłania i odbierania wiadomości WinPopup
 Name:		kpopup
 Version:	0.9.8.2
 Release:	3
