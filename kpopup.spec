@@ -47,6 +47,8 @@ install -d $RPM_BUILD_ROOT/var/lib/kpopup
 	kde_htmldir=%{_kdedocdir} \
 	kde_libs_htmldir=%{_kdedocdir}
 
+rm -rf $RPM_BUILD_ROOT%{_iconsdir}/locolor
+
 %find_lang %{name} --with-kde
 
 %clean
